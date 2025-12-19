@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Dashboard</title>
+  </head>
+  <body>
+    <!-- ====== EN-TÊTE PRINCIPAL ====== -->
+    <header id="mainHeader">Company Dashboard</header>
+
+    <!-- ====== SECTION DU TABLEAU DE BORD ====== -->
+    <div id="dashboard">
+      <header id="dashboardHeader">Dashboard Header</header>
+      <section id="statsSection">
+        <h2>Statistics</h2>
+        <p>Employee Count: <span id="employeeCount">120</span></p>
+        <!-- Nombre d’employés -->
+
+        <!-- Liste des départements -->
+        <ul id="departmentList">
+          <li class="department">Sales</li>
+          <li class="department">Marketing</li>
+          <li class="department">Development</li>
+        </ul>
+
+        <!-- Bouton pour ajouter dynamiquement un nouvel élément via JavaScript -->
+        <button onclick="createNewElement()">Add New Element</button>
+      </section>
+    </div>
+
+    <!-- ====== SECTION DE MANIPULATION DES ATTRIBUTS ====== -->
+    <div id="contentArea">
+      <h1>Attribute Manipulation Example</h1>
+
+      <!-- Deux images liées au développement web -->
+      <img id="exampleImage1" src="JS.jpg" alt="JS Image" />
+      <img id="exampleImage2" src="WEB.jpg" alt="WEB Image" /><br /><br />
+
+      <!-- Lien externe -->
+      <a id="exampleLink" href="https://example.com">Visit Example.com</a
+      ><br /><br />
+
+      <!-- Bouton pour déclencher une fonction JavaScript de changement d’attributs -->
+      <button id="changeAttributesButton" onclick="changeAttributes()">
+        Change Attributes
+      </button>
+    </div>
+
+    <!-- ====== INFORMATIONS SUR L’EMPLOYÉ DU MOIS ====== -->
+    <section class="employee-info">
+      <p>Employee of the Month: John Doe</p>
+      <p>Department: Sales</p>
+    </section>
+
+    <!-- ====== INFORMATIONS SUR LE PRODUIT LE PLUS VENDU ====== -->
+    <section class="product-info">
+      <p>Top Product: Gadget XYZ</p>
+      <p>Units Sold: 500</p>
+    </section>
+
+    <!-- ====== FORMULAIRE POUR METTRE À JOUR LES INFORMATIONS ====== -->
+    <section id="employeeForm">
+      <h2>Update Employee Information</h2>
+
+      <!-- Champ de texte -->
+      <label for="nameInput">Name:</label>
+      <input type="text" id="nameInput" value="Alain" /><br /><br />
+
+      <!-- Menu déroulant -->
+      <label for="departmentSelect">Department:</label>
+      <select id="departmentSelect">
+        <option value="sales">Sales</option>
+        <option value="marketing">Marketing</option>
+        <option value="development">Development</option></select
+      ><br /><br />
+
+      <!-- Boutons radio pour le statut -->
+      <p>Status:</p>
+      <label
+        ><input type="radio" name="status" value="active" checked />
+        Active</label
+      >
+      <label
+        ><input type="radio" name="status" value="inactive" /> Inactive</label
+      ><br /><br />
+
+      <!-- Bouton pour exécuter le script JavaScript -->
+      <button onclick="updatePage()">Update Information</button>
+    </section>
+
+    <!-- ====== PIED DE PAGE ====== -->
+    <footer>© Company Name</footer>
+
+    <!-- Lien vers le fichier JavaScript externe -->
+    <script src="tp1.js"></script>
+  </body>
+</html>
